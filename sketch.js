@@ -19,6 +19,20 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
 
+    var str = "Hello";
+    console.log(str,typeof(str));
+
+    var arr1 = [1,2,3,4,5];
+    console.log(arr1);
+
+    console.log(arr1[4]);
+
+    arr1.push(6);
+    console.log(arr1);
+
+    arr1.pop();
+    console.log(arr1);
+
 
     ground = new Ground(600,height,1200,20);
     platform = new Ground(150, 305, 300, 170);
@@ -83,6 +97,6 @@ function mouseReleased(){
 
 function keyPressed(){
     if(keyCode === 32){
-       // slingshot.attach(bird.body);
+       //slingshot.attach(bird.body);
     }
 }
